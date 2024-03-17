@@ -1,14 +1,34 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button, Alert } from 'react-native';
+
+const MeuComponente = () => {
+  const onPressButton = () => {
+    Alert.alert('Parabéns!\nVocê acertou o botão');
+  };
+
+  return (
+    <View style={{ flex: 0, justifyContent: 'center', alignItems: 'center' }}>
+      <Button
+        title="Pressione-me"
+        onPress={onPressButton}
+      />
+    </View>
+  );
+};
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Text>Minha linha de código com React Native</Text>
+      <Text>Auridebson</Text>
+      <MeuComponente />
+
     </View>
   );
 }
+
+
+
 
 const styles = StyleSheet.create({
   container: {
