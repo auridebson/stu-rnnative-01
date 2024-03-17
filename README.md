@@ -5,5 +5,5 @@ npm install -g react-native-cli
 npx create-expo-app myApp
 
 
-cd AwesomeProject
+cd myApp
 npx expo start
